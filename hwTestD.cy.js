@@ -34,7 +34,7 @@ describe('multiple tests for compliting a form', () => {
     ]
   
     enterData.forEach(typeData => {
-      it(`Home parametrized test: ${typeData.testData}`, () => {
+      it(`Home parameterized test: ${typeData.testData.email} and ${typeData.testData.password}`, () => {
         cy.visit('https://sanitarskyi-ngx-admin.herokuapp.com'); //Open the site      
         cy.get('[alt="Material Dark Theme"]').click(); //Choose a theme    
         cy.get('[title="Forms"]').click(); //Open a "Forms" tab    
